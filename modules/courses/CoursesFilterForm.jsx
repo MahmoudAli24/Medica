@@ -9,7 +9,7 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/c
 import {Slider} from "@nextui-org/slider";
 
 
-const CoursesFilter = () => {
+const CoursesFilterForm = () => {
     const formSchema = z.object({
         searchKey: z.string().min(2, {
             message: "Username must be at least 2 characters.",
@@ -38,7 +38,7 @@ const CoursesFilter = () => {
         label: "$50 - $100", value: "50-100"
     }, {label: "$100 - $200", value: "100-200"}, {label: "More than $200", value: "200-"},];
 
-    return (<div className={"py-3 px-5 rounded bg-white absolute w-full top-0 end-0 -translate-y-[54px]"}>
+    return (<div className={"py-3 px-5 rounded bg-white md:absolute w-full md:top-0 md:end-0 md:-translate-y-[54px] md:shadow-xl"}>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="flex items-center gap-3 flex-col md:flex-row">
                 <FormField
@@ -46,8 +46,7 @@ const CoursesFilter = () => {
                     name="searchKey"
                     title="Duration"
                     render={({field}) => (<>
-
-                        <FormItem className={"w-3/12"}>
+                        <FormItem className={"w-full md:w-3/12"}>
                             <FormLabel>
                                 Duration
                             </FormLabel>
@@ -57,11 +56,11 @@ const CoursesFilter = () => {
                         </FormItem>
                     </>)}
                 />
-                <div className={"grid grid-cols-9 w-9/12 items-center gap-4"}>
+                <div className={"flex flex-col items-center gap-4 justify-between w-full md:grid md:grid-cols-9 md:w-9/12"}>
                     <FormField
                         control={form.control}
                         name="duration"
-                        render={({field}) => (<FormItem className={"col-span-2"}>
+                        render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <FormLabel>
                                 Duration
                             </FormLabel>
@@ -81,7 +80,7 @@ const CoursesFilter = () => {
                     <FormField
                         control={form.control}
                         name="courseType"
-                        render={({field}) => (<FormItem className={"col-span-2"}>
+                        render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <FormLabel>
                                 Duration
                             </FormLabel>
@@ -101,7 +100,7 @@ const CoursesFilter = () => {
                     <FormField
                         control={form.control}
                         name="averagePrice"
-                        render={({field}) => (<FormItem className={"col-span-2"}>
+                        render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <FormLabel>
                                 Duration
                             </FormLabel>
@@ -122,7 +121,7 @@ const CoursesFilter = () => {
                     <FormField
                         control={form.control}
                         name="ratings"
-                        render={({field}) => (<FormItem className={"col-span-2"}>
+                        render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <Slider
                                 label="Ratings"
                                 step={1}
@@ -140,7 +139,7 @@ const CoursesFilter = () => {
                             <FormMessage/>
                         </FormItem>)}
                     />
-                    <Button className={"col-span-1"} type="submit">Submit</Button>
+                    <Button className={"w-full md:col-span-1"} type="submit">Submit</Button>
                 </div>
             </form>
         </Form>
@@ -148,4 +147,4 @@ const CoursesFilter = () => {
     </div>)
 }
 
-export default CoursesFilter;
+export default CoursesFilterForm;

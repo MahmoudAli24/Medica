@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="354" viewBox="0 0 1920 354">
+  <defs>
+    <filter id="Rectangle_465">
+      <feOffset dy="21" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <rect id="Rectangle_465-2" data-name="Rectangle 465" width="1920" height="354" fill="#23317c"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_465)">
+      <rect id="Rectangle_465-3" data-name="Rectangle 465" width="1920" height="354" fill="#fff"/>
+    </g>
+  </g>
+</svg>

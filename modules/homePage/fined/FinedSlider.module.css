@@ -1,0 +1,19 @@
+.swiper-next , .swiper-prev ,.swiper-pagination {
+    top : unset !important;
+    bottom : unset !important;
+    left : unset !important;
+    right : unset !important;
+    position: unset !important;
+}
+.swiper-pagination{
+    width: unset !important;
+}
+.swiper-paginationPage > *{
+    width: 20px !important;
+    height: 3px !important;
+    border-radius: 5px !important;
+    background-color: var(--secondary-light);
+}
+.swiper-paginationPage >*.swiper-pagination-bullet{
+    width: 40px !important;
+}
