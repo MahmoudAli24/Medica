@@ -7,9 +7,13 @@ import {z} from "zod"
 import {zodResolver} from "@hookform/resolvers/zod"
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import {Slider} from "@nextui-org/slider";
+import {usePathname, useRouter, useSearchParams} from "next/navigation";
 
 
 const CoursesFilterForm = () => {
+    const router = useRouter()
+    const pathname = usePathname()
+    const searchParams = useSearchParams()
     const formSchema = z.object({
         searchKey: z.string().min(2, {
             message: "Username must be at least 2 characters.",
@@ -18,13 +22,42 @@ const CoursesFilterForm = () => {
 
     const form = useForm({
         resolver: zodResolver(formSchema), defaultValues: {
-            searchKey: "", duration: "0-2", courseType: "design", averagePrice: "0-50",ratings:[1,50]
+            searchKey: "", duration: "", courseType: "", averagePrice: "",ratings:[1,50]
         },
     });
 
     function onSubmit(values) {
-        console.log(values);
+        const {searchKey, duration, courseType, averagePrice, ratings} = values;
+        const query = {};
+
+        // Add searchKey if it has a value
+        if (searchKey) {
+            query.searchKey = searchKey;
+        }
+
+        // Add duration if it has a value
+        if (duration) {
+            query.duration = duration;
+        }
+
+        // Add courseType if it has a value
+        if (courseType) {
+            query.courseType = courseType;
+        }
+
+        // Add averagePrice if it has a value
+        if (averagePrice) {
+            query.averagePrice = averagePrice;
+        }
+
+        // Add ratings if it has a value
+        if (ratings && ratings.length > 0) {
+            query.ratings = ratings.join(',');
+        }
+        const queryString = new URLSearchParams(query).toString();
+        router.push(pathname + "?" + queryString);
     }
+
 
     const durationOptions = [{label: "0 - 2 hours", value: "0-2"}, {
         label: "2 - 4 hours", value: "2-4"
@@ -38,17 +71,17 @@ const CoursesFilterForm = () => {
         label: "$50 - $100", value: "50-100"
     }, {label: "$100 - $200", value: "100-200"}, {label: "More than $200", value: "200-"},];
 
-    return (<div className={"py-3 px-5 rounded bg-white md:absolute w-full md:top-0 md:end-0 md:-translate-y-[54px] md:shadow-xl"}>
+    return (<div className={"container py-3 px-5 rounded bg-white md:absolute w-full md:top-0 md:end-0 md:-translate-y-[54px] md:shadow-xl"}>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="flex items-center gap-3 flex-col md:flex-row">
                 <FormField
                     control={form.control}
                     name="searchKey"
-                    title="Duration"
+                    title="Search Key"
                     render={({field}) => (<>
                         <FormItem className={"w-full md:w-3/12"}>
                             <FormLabel>
-                                Duration
+                                Search Key
                             </FormLabel>
                             <FormControl>
                                 <Input placeholder="Search" {...field} />
@@ -82,7 +115,7 @@ const CoursesFilterForm = () => {
                         name="courseType"
                         render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <FormLabel>
-                                Duration
+                                Course Type
                             </FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                                 <SelectTrigger>
@@ -102,7 +135,7 @@ const CoursesFilterForm = () => {
                         name="averagePrice"
                         render={({field}) => (<FormItem className={"w-full md:col-span-2"}>
                             <FormLabel>
-                                Duration
+                                Average Price
                             </FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                                 <SelectTrigger>

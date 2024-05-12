@@ -1,10 +1,10 @@
 import CoursesContent from "@/modules/courses/CoursesContent";
 import CoursesFilter from "@/modules/courses/CoursesFilter";
 
-const CoursesData = () => {
+const CoursesData = ({searchParams}) => {
     return (<section className={"container relative"}>
         <CoursesFilter/>
-        <CoursesContent/>
+        <CoursesContent searchParams={searchParams}/>
     </section>)
 }
 
