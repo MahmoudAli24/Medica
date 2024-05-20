@@ -1,0 +1,7 @@
+.active svg path {
+    fill: white;
+}
+
+.active{
+    background-color: var(--secondary-color);
+}

@@ -4,8 +4,8 @@ import Course from "@/modules/course/Course";
 const CoursePage = async ({params})=>{
     const {Name} = params
     const formattedName = Name.replaceAll('-', ' ');
-    const course = await fetchCourseByName(formattedName)
-    console.log(course)
+    // const course = await fetchCourseByName(formattedName)
+    // console.log(course)
     return(
         <Course/>
     )

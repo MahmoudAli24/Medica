@@ -1,5 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import DocCard from "@/components/sheardCompoents/DocCard";
+import DocCard from "@/components/sharedComponents/DocCard";
 import doctorImage from "@/public/cropped-portrait-senior-man-glasses-teacher-professor-posing-isolated-gray-background.svg";
 import {memo} from "react";
 import Link from "next/link";

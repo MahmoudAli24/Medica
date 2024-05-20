@@ -1,4 +1,4 @@
-import CourseCard from "@/modules/courses/CoursesCard";
+import CourseCard from "@/components/sharedComponents/CoursesCard";
 import {fetchCourses} from "@/app/actions/coursesActions";
 
 const CoursesContent = async ({searchParams}) => {
