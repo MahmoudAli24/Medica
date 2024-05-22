@@ -7,9 +7,20 @@ import image from "@/public/Curriculum.png"
 const VideoCard = dynamic(() => import('@/components/sharedComponents/VideoCard'));
 
 const CurriculumSlider = ()=>{
+    const breakpoints = {
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 1.5,
+        },
+        1024: {
+            slidesPerView: 2.5,
+        },
+    }
     return(
         <>
-            <SliderFreeMode>
+            <SliderFreeMode breakpoints={breakpoints}>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <SwiperSlide key={index}>
                         <VideoCard image={image} title={"Mahmoud Ali Saber"} />

@@ -21,7 +21,7 @@ const CourseCard = ({item}) => {
                             <Image src={item.image} alt={item.title} className={"object-fill"} />
                         </div>
                         <div className={"flex flex-col justify-between gap-4 lg:col-span-2"}>
-                            <TypographyMuted>{item["lastUpdate"]}</TypographyMuted>
+                            <TypographyMuted className={"w-2/3 md:w-full"}>{item["lastUpdate"]}</TypographyMuted>
                             <TypographyH3 className={"text-[--main-color] font-bold"}>{item.title}</TypographyH3>
                             <div className={"flex items-center justify-between flex-wrap"}>
                             <span className={"flex flex-col items-center"}>
@@ -53,7 +53,10 @@ const CourseCard = ({item}) => {
                             <DocNameAndRating pClassName={"text-[#BECBE1]"} className={"text-[--main-color]"} name={item.docName} docTitle={item.docTitle} rate={item.courseRate}/>
                         </div>
                     </div>
-                    <span className={"absolute top-0 end-0 rounded-bl-[20px] rounded-tr-[20px] bg-[#12193E] text-white font-bold py-3 px-2 text-xl"}>EGP {item.price}</span>
+                    {item.price && <span
+                        className={"absolute top-0 end-0 rounded-bl-[20px] rounded-tr-[20px] bg-[#12193E] text-white font-bold py-3 px-2 text-lg md:text-xl"}>EGP {item.price}</span>}
+                    {item.isSoon && <span
+                        className={"absolute top-0 end-0 rounded-bl-[20px] rounded-tr-[20px] bg-gradient-to-br from-[#23317C] to-[#2C95D3] text-white py-3 px-2 text-lg md:text-xl"}>{item.isSoon && "Soon"}</span>}
                 </CardContent>
             </Link>
         </Card>

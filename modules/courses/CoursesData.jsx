@@ -1,5 +1,7 @@
+import dynamic from "next/dynamic";
 import CoursesContent from "@/modules/courses/CoursesContent";
-import CoursesFilter from "@/modules/courses/CoursesFilter";
+
+const CoursesFilter = dynamic(() => (import("@/modules/courses/CoursesFilter")))
 
 const CoursesData = ({searchParams}) => {
     return (<section className={"container relative"}>

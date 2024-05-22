@@ -4,23 +4,14 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode ,Autoplay } from 'swiper/modules';
+import {cn} from "@/lib/utils";
 
-const SliderFreeMode = ({children})=>{
+const SliderFreeMode = ({children ,breakpoints ,className})=>{
     return(
         <>
             <Swiper
                 slidesPerView={1}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 1.5,
-                    },
-                    1024: {
-                        slidesPerView: 2.5,
-                    },
-                }}
+                breakpoints={breakpoints}
                 loop={true}
                 autoplay={{
                     delay: 2500,
@@ -29,7 +20,7 @@ const SliderFreeMode = ({children})=>{
                 spaceBetween={20}
                 freeMode={true}
                 modules={[FreeMode ,Autoplay]}
-                className="mySwiper"
+                className={cn("mySwiper", className)}
             >
                 {children}
             </Swiper>

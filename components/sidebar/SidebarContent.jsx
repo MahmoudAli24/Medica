@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import dashboardLogo from "@/public/icons/dashboardLogo.svg";
 import SidebarItem from "@/components/sidebar/SidebarItem";
