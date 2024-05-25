@@ -1,12 +1,13 @@
 "use client"
 import dynamic from 'next/dynamic'
 import {SwiperSlide} from "swiper/react";
-const SliderFreeMode = dynamic(() => import('@/components/sharedComponents/sliderFreeMode/SliderFreeMode'));
+const SliderFreeMode = dynamic(() => import('@/components/sharedComponents/sliderFreeMode/SliderFreeMode') , {loading:()=> <DashboardCoursesLoading/>});
 import {TypographyH3} from "@/components/typography/TypographyH3";
 import Link from "next/link";
 import {MdOutlineKeyboardDoubleArrowRight} from "react-icons/md";
 import CourseCard from "@/components/sharedComponents/CoursesCard";
 import doctor from "@/public/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded.png";
+import DashboardCoursesLoading from "@/modules/Dashboard/dashboardCourses/components/DashboardCoursesLoading";
 
 const DashboardCoursesMyCourses = () => {
     const breakpoints = {

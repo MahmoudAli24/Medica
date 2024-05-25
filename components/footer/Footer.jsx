@@ -14,6 +14,9 @@ const Footer = () => {
     if (isDashboard) {
         return null; // Do not render the Navbar on course pages
     }
+    if(pathname.includes("sign-in")){
+        return null;
+    }
     return (<footer className={"py-8 pb-3 bg-[--main-color]"}>
             <div className={"container grid grid-cols-12 gap-4"}>
                 <FooterText/>

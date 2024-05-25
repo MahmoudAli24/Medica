@@ -10,14 +10,14 @@ import Sidebar from "@/components/navbar/components/Sidebar";
 import NavbarUser from "@/components/navbar/components/NavbarUser";
 
 const Navbar = () => {
-    const isLogin = true
+    const isLogin = false
     const pathname = usePathname()
     const isCoursePage = pathname.match(/^\/courses\/[^\/]+\/.*/);
 
     if (isCoursePage) {
         return null; // Do not render the Navbar on course pages
     }
-    if(pathname.includes("dashboard")){
+    if(pathname.includes("dashboard") || pathname.includes("sign-in")){
         return null;
     }
 
