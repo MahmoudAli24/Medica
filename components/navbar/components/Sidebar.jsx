@@ -15,8 +15,8 @@ const Sidebar = ()=>{
             <SheetContent>
                 <div className={"flex items-center justify-between mt-4"}>
                     <SelectLang/>
-                    <Link className={"capitalize "} href={"/sign-in"}>sign in</Link>
-                    <Link href={"/"}
+                    <Link className={"capitalize"} href={"/sign-in"}>sign in</Link>
+                    <Link href={"/sign-up"}
                           className={"capitalize px-4 py-2 rounded-sm text-[--main-color] font-bold bg-gradient-to-bl from-[#00F2FE] to-[#31C7FE]"}>sign
                         up</Link>
                 </div>

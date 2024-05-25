@@ -5,7 +5,7 @@ import {TypographyLead} from "@/components/typography/TypographyLead";
 import {buttonVariants} from "@/components/ui/button";
 import {IoLogoFacebook, IoLogoGoogleplus} from "react-icons/io";
 import {FaTwitterSquare} from "react-icons/fa";
-import SignInForm from "@/modules/siginInModule/components/SignInForm";
+import SignInForm from "@/modules/signInModule/components/SignInForm";
 
 const SignInData = () => {
     return (
@@ -20,15 +20,15 @@ const SignInData = () => {
                     <div className={"py-4 border-white/20 border-y flex flex-col gap-4"}>
                         <TypographyLead className={"text-white"}>You can log in with:</TypographyLead>
                         <div className={"grid grid-cols-1 sm:grid-cols-3 items-center gap-3"}>
-                            <Link className={`${buttonVariants({variant: "default"})} bg-[#EA4235]`} href={"/"}>
+                            <Link className={`${buttonVariants({variant: "default"})} !bg-[#EA4235]`} href={"/"}>
                                 <span><IoLogoGoogleplus size={24} className={"me-2"}/></span>
                                 <span>Google account</span>
                             </Link>
-                            <Link className={`${buttonVariants({variant: "default"})} bg-[#00BFFF]`} href={"/"}>
-                                <span><FaTwitterSquare size={24} className={"me-2"}/></span> <span>Google account</span>
+                            <Link className={`${buttonVariants({variant: "default"})} !bg-[#00BFFF]`} href={"/"}>
+                                <span><FaTwitterSquare size={24} className={"me-2"}/></span> <span>Twitter account</span>
                             </Link>
-                            <Link className={`${buttonVariants({variant: "default"})} bg-[#0062A5]`} href={"/"}>
-                                <span><IoLogoFacebook size={24} className={"me-2"}/> </span> <span>Google account</span>
+                            <Link className={`${buttonVariants({variant: "default"})} !bg-[#0062A5]`} href={"/"}>
+                                <span><IoLogoFacebook size={24} className={"me-2"}/> </span> <span>Facebook account</span>
                             </Link>
                         </div>
                     </div>

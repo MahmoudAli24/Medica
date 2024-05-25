@@ -1,4 +1,4 @@
-import SignInModule from "@/modules/siginInModule/SignInModule";
+import SignInModule from "@/modules/signInModule/SignInModule";
 
 const SignInPage = () => {
     return(

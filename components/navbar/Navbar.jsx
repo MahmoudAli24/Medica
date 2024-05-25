@@ -17,7 +17,7 @@ const Navbar = () => {
     if (isCoursePage) {
         return null; // Do not render the Navbar on course pages
     }
-    if(pathname.includes("dashboard") || pathname.includes("sign-in")){
+    if(pathname.includes("dashboard") || pathname.includes("sign-in") || pathname.includes("sign-up")){
         return null;
     }
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                 !isLogin ? <div className={"hidden items-center text-white gap-[20px] lg:flex"}>
                     <SelectLang/>
                     <Link className={"capitalize "} href={"/sign-in"}>sign in</Link>
-                    <Link href={"/"}
+                    <Link href={"/sign-up"}
                           className={"capitalize px-4 py-2 rounded-sm text-[--main-color] font-bold bg-gradient-to-bl from-[#00F2FE] to-[#31C7FE]"}>sign
                         up</Link>
                 </div>
