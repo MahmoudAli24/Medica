@@ -37,7 +37,7 @@ const ExploreTabs = () => {
             <Tabs defaultValue="CS" className="mx-auto mt-8">
                 <TabsList className={"flex justify-center"}>
                     {tabs.map((tab) => (
-                        <TabsTrigger key={tab.value} value={tab.value}>
+                        <TabsTrigger className={"whitespace-nowrap rounded-full border-2 border-gray-400 px-8 py-2 text-[18px] font-medium data-[state=active]:bg-gradient-to-br data-[state=active]:border-none data-[state=active]:from-[--secondary-light] data-[state=active]:to-[--secondary-color] data-[state=active]:text-white data-[state=active]:font-bold data-[state=active]:shadow-lg data-[state=active]:shadow-[--secondary-color-shadow]"} key={tab.value} value={tab.value}>
                             {tab.label}
                         </TabsTrigger>
                     ))}

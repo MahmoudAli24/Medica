@@ -10,7 +10,7 @@ import Sidebar from "@/components/navbar/components/Sidebar";
 import NavbarUser from "@/components/navbar/components/NavbarUser";
 
 const Navbar = () => {
-    const isLogin = false
+    const isLogin = true
     const pathname = usePathname()
     const isCoursePage = pathname.match(/^\/courses\/[^\/]+\/.*/);
 

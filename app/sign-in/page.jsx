@@ -1,4 +1,6 @@
+"use client"
 import SignInModule from "@/modules/signInModule/SignInModule";
+
 
 const SignInPage = () => {
     return(

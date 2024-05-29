@@ -44,14 +44,15 @@ const SidebarContent = () => {
             </div>
             <div>
                 <ul className={"space-y-3"}>
-                    <SidebarItem isActive={pathname === "/dashboard/settings"} href={"/dashboard/settings"}>
-                        <SettingsIcon/>
-                    </SidebarItem>
+
                     <SidebarItem isActive={pathname === "/dashboard/support"} href={"/dashboard/support"}>
                         <SupportIcon/>
                     </SidebarItem>
                     <SidebarItem isActive={pathname === "/dashboard/question"} href={"/dashboard/question"}>
                         <QuestionIcon/>
+                    </SidebarItem>
+                    <SidebarItem isActive={pathname === "/dashboard/settings"} href={"/dashboard/settings"}>
+                        <SettingsIcon/>
                     </SidebarItem>
                 </ul>
             </div>

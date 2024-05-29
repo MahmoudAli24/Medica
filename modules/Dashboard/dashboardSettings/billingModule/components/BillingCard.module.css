@@ -1,0 +1,6 @@
+.BillingCard:last-child  p {
+    color: white;
+}
+.BillingCard:last-child  button {
+    background-color: #3D4C9A;
+}
