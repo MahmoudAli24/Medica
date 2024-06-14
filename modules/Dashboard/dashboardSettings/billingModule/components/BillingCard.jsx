@@ -11,43 +11,19 @@ const BillingCard = () => {
             <CardTitle className={"font-bold"}>Create project</CardTitle>
             <CardDescription>Deploy your new project in one-click.</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className={"p-3"}>
             <div className={"flex items-center gap-3"}>
                 <TypographyH2 className={"font-bold"}>$99.<span className={"text-gray-400"}>99</span></TypographyH2>
-                <TypographyMuted className={"text-lg"}>/year</TypographyMuted>
+                <TypographyMuted className={"text-sm"}>/year</TypographyMuted>
             </div>
             <div className={"space-y-3"}>
-                <div className={"flex items-center gap-3"}>
-                    <span>
-                        <TrueCircleIcon/>
-                    </span>
+                {Array.from(Array(3)).map((item, index) => (
+                    <div className="flex items-center gap-3" key={index}>
+                            <span>
+                                <TrueCircleIcon/>
+                            </span>
                     <TypographyMuted>Get Enterprise Plan</TypographyMuted>
-                </div>
-                <div className={"flex items-center gap-3"}>
-                    <span>
-                        <TrueCircleIcon/>
-                    </span>
-                    <TypographyMuted>Get Enterprise Plan</TypographyMuted>
-                </div>
-                <div className={"flex items-center gap-3"}>
-                    <span>
-                        <TrueCircleIcon/>
-                    </span>
-                    <TypographyMuted>Get Enterprise Plan</TypographyMuted>
-                </div>
-                <div className={"flex items-center gap-3"}>
-                    <span>
-                        <TrueCircleIcon/>
-                    </span>
-                    <TypographyMuted>Get Enterprise Plan</TypographyMuted>
-                </div>
-                <div className={"flex items-center gap-3"}>
-                    <span>
-                        <TrueCircleIcon/>
-                    </span>
-                    <TypographyMuted>Get Enterprise Plan</TypographyMuted>
-                </div>
-
+                </div>))}
             </div>
             <Button className={"bg-[--secondary-color] mt-4 text-lg w-full py-7"} size={"lg"}>Choose Plan</Button>
         </CardContent>

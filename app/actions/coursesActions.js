@@ -109,7 +109,6 @@ export const fetchCourses = (searchParams) => {
 }
 
 export const fetchCourseByName =(name)=> {
-    console.log("name=>",name)
     if (name){
         return coursesData.find((course) => course.title === name);
     }else {

@@ -1,6 +1,10 @@
-const ExamsPage = ()=>{
-    return(
-        <div>Exams Page</div>
+import DashboardExams from "@/modules/Dashboard/dashboardExams/DashboardExams";
+
+const ExamsPage = () => {
+    return (
+        <>
+            <DashboardExams/>
+        </>
     )
 }
 

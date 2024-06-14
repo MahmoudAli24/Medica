@@ -8,7 +8,6 @@ import {TypographyMuted} from "@/components/typography/TypographyMuted";
 
 const Footer = () => {
     const pathname = usePathname();
-    console.log(pathname)
     const isDashboard = pathname.includes("dashboard")
 
     if (isDashboard) {

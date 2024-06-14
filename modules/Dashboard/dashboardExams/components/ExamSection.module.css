@@ -1,0 +1,6 @@
+.blue:before {
+    content: url("./../../../../public/icons/blue.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

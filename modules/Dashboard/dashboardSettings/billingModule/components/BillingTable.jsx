@@ -10,9 +10,12 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import {columns} from "@/modules/Dashboard/dashboardSettings/billingModule/components/columns";
+import {useState} from "react";
 
 const BillingTable = ()=>{
-    const data = [{
+    const [rowSelection, setRowSelection] = useState({})
+    const data = [
+        {
         id:1,
         Invoice:"Invoice#125874",
         CreatedDate : "25 Dec 2023",
@@ -32,6 +35,10 @@ const BillingTable = ()=>{
         data,
         columns,
         getCoreRowModel: getCoreRowModel(),
+        onRowSelectionChange: setRowSelection,
+        state: {
+            rowSelection,
+        },
     })
     return(
         <div className={"p-3 rounded-lg mt-3 border border-gray-400"}>

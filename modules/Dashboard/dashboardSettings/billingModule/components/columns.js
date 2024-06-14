@@ -1,3 +1,7 @@
+import {FaEye} from "react-icons/fa";
+import {Button} from "@/components/ui/button";
+import {MdDelete} from "react-icons/md";
+
 export const columns= [
     {
       accessorKey:"id",
@@ -40,6 +44,18 @@ export const columns= [
             }else {
                 return <div className={"px-2 py-1 bg-red-400/20 text-center mx-auto text-red-500 rounded"}>Filed</div>
             }
+        }
+    },
+    {
+        id: "actions",
+        header: "Actions",
+        cell:({row})=>{
+            return(
+                <div className={"flex items-center justify-center gap-2"}>
+                    <Button className={"bg-[--main-color] text-white w-[30px] h-[30px]"} size={"icon"}><FaEye size={18} /></Button>
+                    <Button className={"bg-[#F5013B] text-white w-[30px] h-[30px]"} size={"icon"}><MdDelete size={20} /></Button>
+                </div>
+            )
         }
     }
 ]
