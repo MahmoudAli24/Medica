@@ -5,13 +5,13 @@ const DashboardHomeHeader = dynamic(()=> import("@/modules/Dashboard/dashboardHo
 const DashboardCurrentStudy = dynamic(()=> import("@/modules/Dashboard/dashboardHome/components/DashboardCurrentStudy"));
 const DashboardHomeLatestStudy = dynamic(()=> import("@/modules/Dashboard/dashboardHome/components/DashboardHomeLatestStudy"));
 
-const DashboardHome = () => {
+const DashboardHome = ({dict}) => {
     return(
         <>
-            <DashboardHomeHeader/>
-            <DashboardCurrentStudy/>
-            <DashboardHomeLatestStudy/>
-            <DashboardHomePopularCourses/>
+            <DashboardHomeHeader dict={dict}  />
+            <DashboardCurrentStudy dict={dict} />
+            <DashboardHomeLatestStudy dict={dict} />
+            <DashboardHomePopularCourses dict={dict} />
         </>
     )
 }

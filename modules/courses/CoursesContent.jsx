@@ -1,7 +1,7 @@
 import CourseCard from "@/components/sharedComponents/CoursesCard";
-import {fetchCourses} from "@/app/actions/coursesActions";
+import {fetchCourses} from "@/app/[lang]/actions/coursesActions";
 
-const CoursesContent = async ({searchParams}) => {
+const CoursesContent = async ({searchParams , dict}) => {
     const data = await fetchCourses(searchParams);
 
     return (<div className="py-4 md:pt-14">

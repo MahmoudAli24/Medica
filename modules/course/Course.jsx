@@ -7,7 +7,7 @@ import JoinNow from "@/modules/homePage/joinNow/JoinNow";
 import CourseMayLike from "@/modules/course/CourseMayLike";
 import feedbackImage from "@/public/icons/feedback.png";
 
-const Course = () => {
+const Course = ({dict}) => {
     const feedbackData = [
         { value: 80, count: 100, stars: 5 },
         { value: 60, count: 80, stars: 4 },
@@ -28,13 +28,13 @@ const Course = () => {
     ];
     return(
         <main>
-            <CourseHead/>
-            <CourseOverview/>
-            <CourseLearn/>
-            <CourseVideos/>
-            <CourseFeedback feedbackData={feedbackData} feedbackDataR={feedbackDataR}/>
-            <JoinNow/>
-            <CourseMayLike/>
+            <CourseHead dict={dict}/>
+            <CourseOverview dict={dict}/>
+            <CourseLearn dict={dict}/>
+            <CourseVideos dict={dict}/>
+            <CourseFeedback dict={dict} feedbackData={feedbackData} feedbackDataR={feedbackDataR}/>
+            <JoinNow dict={dict}/>
+            <CourseMayLike dict={dict}/>
         </main>
     )
 }

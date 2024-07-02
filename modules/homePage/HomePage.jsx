@@ -3,15 +3,15 @@ import Explore from "@/modules/homePage/explore/Explore";
 import Fined from "@/modules/homePage/fined/Fined";
 import JoinNow from "@/modules/homePage/joinNow/JoinNow";
 
-const HomePage = () => {
+const HomePage = ({ dict }) => {
     return(
         <main>
-            <HomeSlider/>
-            <Explore/>
-            <Fined/>
-            <JoinNow/>
+            <HomeSlider dict={dict} />
+            <Explore dict={dict} />
+            <Fined dict={dict} />
+            <JoinNow dict={dict} />
         </main>
     )
 }
 
-export default HomePage
+export default HomePage;

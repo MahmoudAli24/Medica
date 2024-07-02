@@ -1,12 +1,11 @@
-"use client"
-import dynamic from 'next/dynamic'
-import doctorImage
-    from "@/public/cropped-portrait-senior-man-glasses-teacher-professor-posing-isolated-gray-background.svg";
+"use client";
+import dynamic from 'next/dynamic';
+import doctorImage from "@/public/cropped-portrait-senior-man-glasses-teacher-professor-posing-isolated-gray-background.svg";
 const SliderFreeMode = dynamic(() => import('@/components/sharedComponents/sliderFreeMode/SliderFreeMode'));
-import {SwiperSlide} from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import DocCard from "@/components/sharedComponents/DocCard";
 
-export default function CourseMayLikeSlider() {
+export default function CourseMayLikeSlider({ dict }) {
     const breakpoints = {
         640: {
             slidesPerView: 2,
@@ -18,17 +17,18 @@ export default function CourseMayLikeSlider() {
             slidesPerView: 2.5,
         },
     }
+
     return (
         <>
             <SliderFreeMode breakpoints={breakpoints}>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <SwiperSlide key={index}>
                         <DocCard
-                            name="Doctor Name"
+                            name={dict.courseMayLike.doctors[index].name}
                             image={doctorImage}
-                            title="Doctor Mahmoud Ali Saber"
-                            rate={4.5}
-                            docTitle="Doc Title"
+                            title={dict.courseMayLike.doctors[index].title}
+                            rate={dict.courseMayLike.doctors[index].rate}
+                            docTitle={dict.courseMayLike.doctors[index].docTitle}
                         />
                     </SwiperSlide>
                 ))}

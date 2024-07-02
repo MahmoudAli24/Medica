@@ -1,13 +1,13 @@
 import FinedSlider from "@/modules/homePage/fined/FinedSlider";
 import FindContent from "@/modules/homePage/fined/FindContent";
 
-const Fined = () => {
+const Fined = ({dict}) => {
     return (<>
         <section className="container pb-3">
             <div className={"grid grid-cols-1 md:grid-cols-7"}>
-                <FindContent/>
+                <FindContent dict={dict}/>
                 <div className="mt-4 md:col-span-4 md:mt-0">
-                    <FinedSlider/>
+                    <FinedSlider dict={dict}/>
                 </div>
             </div>
         </section>

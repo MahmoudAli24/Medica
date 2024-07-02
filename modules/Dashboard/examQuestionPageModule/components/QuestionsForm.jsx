@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import { submitExamResult } from "@/app/actions/coursesExamsAction";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { TypographyH3 } from "@/components/typography/TypographyH3";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -8,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2 } from "lucide-react";
+import {submitExamResult} from "@/app/[lang]/actions/coursesExamsAction";
 
 const QuestionsForm = ({ examQuestion }) => {
     const { toast } = useToast();

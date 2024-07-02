@@ -2,8 +2,9 @@ import Curriculum from "@/modules/CourseVideoPage/Curriculum";
 import CourseVideoAccordion from "@/modules/CourseVideoPage/CourseVideoAccordion";
 import CourseFeedback from "@/components/sharedComponents/CourseFeedback";
 import feedbackImage from "@/public/icons/feedback.png";
+import VideoPlayer from "@/components/sharedComponents/videoPlayer/VideoPlayer";
 
-const CourseVideoModule = () => {
+const CourseVideoModule = ({dict}) => {
     const feedbackData = [
         { value: 80, count: 100, stars: 5 },
         { value: 60, count: 80, stars: 4 },
@@ -23,9 +24,10 @@ const CourseVideoModule = () => {
         { image: feedbackImage, userName: "User 2", rate: 5, date: "2024-05-02", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
     ];
     return (<main>
-        <Curriculum/>
-        <CourseVideoAccordion/>
-        <CourseFeedback feedbackData={feedbackData} feedbackDataR={feedbackDataR}/>
+        <VideoPlayer videoSrc={"https://www.youtube.com/watch?v=oUFJJNQGwhk"}/>
+        <Curriculum dict={dict}/>
+        <CourseVideoAccordion dict={dict}/>
+        <CourseFeedback dict={dict} feedbackData={feedbackData} feedbackDataR={feedbackDataR}/>
     </main>);
 };
 

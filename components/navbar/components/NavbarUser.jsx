@@ -3,6 +3,7 @@ import Link from "next/link";
 import {CiSearch} from "react-icons/ci";
 import {BsBell} from "react-icons/bs";
 import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import SelectLang from "@/components/navbar/components/SelectLang";
 
 const NavbarUser = ({isBlack}) => {
     return (<div className={"flex items-center gap-3"}>
@@ -20,6 +21,7 @@ const NavbarUser = ({isBlack}) => {
         <div className={`${isBlack && "text-white"} flex items-center gap-4`}>
             <Link href={"/dashboard/search"}><CiSearch size={32}/></Link>
             <Link href={"/"}><BsBell size={28}/></Link>
+            <SelectLang/>
             <Link href={"/dashboard"}><Avatar>
                 <AvatarImage src="https://github.com/shadcn.png"/>
                 <AvatarFallback>CN</AvatarFallback>

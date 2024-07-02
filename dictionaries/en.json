@@ -1,0 +1,238 @@
+{
+  "explore": "Explore",
+  "yourSkills": "Your Skills With Thousands Of Hands‑On Classes.",
+  "comprehensiveTraining": "Comprehensive training, exams, certificates. Find your dream job.",
+  "startLearning": "Start Learning Today",
+  "learnMore": "Learn More . . .",
+  "certificates": "certificates",
+  "Learn": "Learn",
+  "Resources": "Resources",
+  "Pricing": "Pricing",
+  "taxingLaughter": "Taxing Laughter: The Joke Tax Chronicles",
+  "findTheBestCareer": "Find The Best Career Track for You",
+  "startCareer": "Start Your Career",
+  "whyStudentsLove": "Why Students Love",
+  "medica": "MEDICA",
+  "longEstablishedFact": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point distribution of letters,",
+  "joinUsNow": "Join Us Now!",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "footer": {
+    "about": "About",
+    "aboutUs": "About Us",
+    "instructors": "Instructors",
+    "contactUs": "Contact Us",
+    "pricing": "Pricing",
+    "learn": "Learn",
+    "courses": "Courses",
+    "careerTracks": "Career tracks",
+    "careerCertificate": "Career Certificate",
+    "courseCertificate": "Course Certificate",
+    "resources": "Resources",
+    "courseNotes": "Course Notes",
+    "templates": "Templates",
+    "careerGuides": "Career Guides",
+    "practiceExams": "Practice Exams",
+    "platform": "Platform",
+    "successStories": "Success Stories",
+    "qnaHub": "Q&A Hub",
+    "helpCenter": "Help Center",
+    "verifyCertificate": "Verify Certificate",
+    "company": "Company",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "companyDescription": "We are a professional cleaning company in 1997 and providing leading commercial residential cleaning solutions in the U.S.",
+    "followUs": "Follow us",
+    "medica": "MEDICA",
+    "copyrightsReserved": "Copyrights Reserved",
+    "termsAndConditions": "Terms and conditions",
+    "cookiesPolicy": "Cookies policy",
+    "copyrightNotification": "Copyright notification"
+  },
+  "courseHead": {
+    "foundational": "Foundational",
+    "with": "With",
+    "coFounder": "Co-Founder & Chief Technology Officer",
+    "courseDescription": "this course provides an overview of medical coding, focusing on the HCPCS, CPT, and ICD coding systems. Students will learn the basics of coding and gain an understanding of the different code.",
+    "weeks": "7 Weeks",
+    "lessons": "81 lessons",
+    "startCourse": "Start Course",
+    "freeDays": "Get 7 Free Days For First Sign Up"
+  },
+  "courseOverview": {
+    "title": "Course Overview",
+    "description": "this course provides an overview of medical coding, focusing on the HCPCS, CPT, and ICD coding systems. Students will learn the basics of coding and gain an understanding of the different code sets and how they are used in medical billing and reimbursement. The course will cover coding guidelines, conventions, and modifiers, as well as common coding scenarios and challenges."
+  },
+  "courseLearn": {
+    "title": "What You will learn?",
+    "section": "Section",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "courseVideos": {
+    "title": "Medical Coding and Transcription Curriculum",
+    "lectures": "Lectures",
+    "numberOfLectures": "6",
+    "totalDuration": "01:08:52",
+    "lockedLecturesNotice": "Some lectures will remain locked until you watch the previous ones.",
+    "videoTitle1": "Difference between coding and transcriptions",
+    "videoTitle2": "Introduction to Medical Coding",
+    "videoTitle3": "Advanced Transcription Techniques",
+    "videoTitle4": "Understanding Medical Terminology",
+    "videoTitle5": "Best Practices in Coding",
+    "videoTitle6": "Final Review and Exam",
+    "watchFree": "Watch Free",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "courseMayLike": {
+    "title": "Courses You",
+    "subtitle": "May Like",
+    "doctors": [
+      {
+        "name": "Doctor Name",
+        "title": "Doctor Mahmoud Ali Saber",
+        "rate": 4.5,
+        "docTitle": "Doc Title"
+      },
+      {
+        "name": "Doctor Name",
+        "title": "Doctor Yasser Ahmed",
+        "rate": 4.0,
+        "docTitle": "Doc Title"
+      },
+      {
+        "name": "Doctor Name",
+        "title": "Doctor Mohamed Abdallah",
+        "rate": 4.7,
+        "docTitle": "Doc Title"
+      },
+      {
+        "name": "Doctor Name",
+        "title": "Doctor Ali Hassan",
+        "rate": 4.2,
+        "docTitle": "Doc Title"
+      },
+      {
+        "name": "Doctor Name",
+        "title": "Doctor Ahmed Youssef",
+        "rate": 4.3,
+        "docTitle": "Doc Title"
+      }
+    ]
+  },
+  "coursesPage": {
+    "MedicalSpecialties": "Medical Specialties",
+    "Filter": "Filter"
+  },
+  "labels": {
+    "searchKey": "Search Key",
+    "duration": "Duration",
+    "courseType": "Course Type",
+    "averagePrice": "Average Price",
+    "ratings": "Ratings"
+  },
+  "placeholders": {
+    "search": "Search",
+    "duration": "Select duration",
+    "courseType": "Select course type",
+    "averagePrice": "Select average price range"
+  },
+  "buttons": {
+    "submit": "Submit"
+  },
+  "validation": {
+    "usernameMinLength": "Username must be at least 2 characters.",
+    "EmailMinLength": "Email must be at least 2 characters",
+    "PasswordMinLength" : "Password must be at least 6 characters",
+    "EmailInvalid": "Email Invalid"
+  },
+  "durationOptions": [
+    {"label": "0 - 2 hours", "value": "0-2"},
+    {"label": "2 - 4 hours", "value": "2-4"},
+    {"label": "4 - 6 hours", "value": "4-6"},
+    {"label": "6 - 8 hours", "value": "6-8"}
+  ],
+  "courseTypeOptions": [
+    {"label": "Web Development", "value": "web-development"},
+    {"label": "Data Science", "value": "data-science"},
+    {"label": "Design", "value": "design"},
+    {"label": "Business", "value": "business"}
+  ],
+  "averagePriceOptions": [
+    {"label": "Less than $50", "value": "0-50"},
+    {"label": "$50 - $100", "value": "50-100"},
+    {"label": "$100 - $200", "value": "100-200"},
+    {"label": "More than $200", "value": "200-"}
+  ],
+  "CourseVideo": {
+    "Curriculum": "Curriculum"
+  },
+  "comments": "Comments",
+  "commentsContent": "Yes. It adheres to the WAI-ARIA design pattern.",
+  "attachments": "Attachments",
+  "attachmentsContent": "Yes. It adheres to the WAI-ARIA design pattern.",
+  "direction": "ltr",
+  "studentFeedback": "Student Feedback",
+  "ratings": "1996 ratings",
+  "signInImageAlt": "Sign In",
+  "loginToYourProfile": "Login to Your Profile",
+  "logInWith": "You can log in with:",
+  "googleAccount": "Google account",
+  "twitterAccount": "Twitter account",
+  "facebookAccount": "Facebook account",
+  "loginWithEmail": "Or you can login with your email",
+  "email": "Email",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "forgotPassword": "Forgot your password",
+  "enter": "Enter",
+  "dashboardHomeHeader": {
+    "welcomeBack": "Welcome back",
+    "userName": "Ali Husni",
+    "subtitle": "Standard dummy text ever since the 1500s.",
+    "overview": "Overview",
+    "timeAlt": "Time",
+    "hoursSpent": "Hours Spent"
+  },
+  "dashboardHomePopularCourses": {
+    "title": "Popular Courses",
+    "showMore": "Show More",
+    "courseTitle1": "Course Title 1",
+    "courseDescription1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "docTitle1": "Professor of Medicine",
+    "courseTitle2": "Course Title 2",
+    "courseDescription2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "docTitle2": "Professor of Engineering"
+  },
+  "dashboardHomeLatestStudy": {
+    "title": "Latest Study",
+    "videoTitle": "Lorem Ipsum dolor sit amet"
+  },
+  "dashboardCurrentStudy": {
+    "title": "Current Study",
+    "programTitle": "Advanced Training Program on Decontamination of Medical Equipment",
+    "programDescription": "Introducing you to the field of data science and building your understanding of the key data science terms and processes."
+  },
+  "lang": "en",
+  "dashboardCourses": {
+    "title": "Courses",
+    "subtitle": "Standard dummy text ever since the 1500s."
+  },
+  "dashboardCoursesMyCourses": {
+    "title": "My Courses",
+    "courseTitle1": "Course Title 1",
+    "courseDescription1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Id aliquet lectus proin nibh nisl.",
+    "docTitle1": "Professor of Medicine",
+    "exploreAllCourses": "Explore all courses"
+  },
+  "dashboardCoursesFavorite": {
+    "title": "Favorite Courses",
+    "exploreAllCourses": "Explore all courses"
+  },
+  "dashboardCoursesRecommended": {
+    "title": "Recommended Courses",
+    "exploreAllCourses": "Explore all courses"
+  },
+  "VerifyYourEmail": "Verify your email to complete your registration."
+}

@@ -1,11 +1,11 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import DocCard from "@/components/sharedComponents/DocCard";
 import doctorImage from "@/public/cropped-portrait-senior-man-glasses-teacher-professor-posing-isolated-gray-background.svg";
-import {memo} from "react";
+import { memo } from "react";
 import Link from "next/link";
-import {MdOutlineKeyboardDoubleArrowRight} from "react-icons/md";
+import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
-const ExploreTabs = () => {
+const ExploreTabs = ({ dict }) => {
     const tabs = [
         {
             value: 'CS',
@@ -31,7 +31,6 @@ const ExploreTabs = () => {
         }
     ];
 
-
     return (
         <>
             <Tabs defaultValue="CS" className="mx-auto mt-8">
@@ -50,7 +49,7 @@ const ExploreTabs = () => {
                     </TabsContent>
                 ))}
             </Tabs>
-            <Link href={"/courses"} className={"capitalize inline-flex justify-center items-center gap-1 w-full text-[--main-color] text-center mt-2"}>See More <MdOutlineKeyboardDoubleArrowRight size={18} /></Link>
+            <Link href={"/courses"} className={"capitalize inline-flex justify-center items-center gap-1 w-full text-[--main-color] text-center mt-2"}>{dict.learnMore} <MdOutlineKeyboardDoubleArrowRight size={18} /></Link>
         </>
     );
 };

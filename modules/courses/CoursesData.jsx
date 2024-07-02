@@ -3,10 +3,10 @@ import CoursesContent from "@/modules/courses/CoursesContent";
 
 const CoursesFilter = dynamic(() => (import("@/modules/courses/CoursesFilter")))
 
-const CoursesData = ({searchParams}) => {
+const CoursesData = ({searchParams , dict}) => {
     return (<section className={"container relative"}>
-        <CoursesFilter/>
-        <CoursesContent searchParams={searchParams}/>
+        <CoursesFilter dict={dict}/>
+        <CoursesContent dict={dict} searchParams={searchParams}/>
     </section>)
 }
 

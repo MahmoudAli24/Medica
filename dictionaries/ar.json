@@ -1,0 +1,238 @@
+{
+  "explore": "استكشف",
+  "yourSkills": "مهاراتك مع الآلاف من الفصول العملية.",
+  "comprehensiveTraining": "تدريب شامل، امتحانات، شهادات. ابحث عن وظيفتك المثالية.",
+  "startLearning": "ابدأ التعلم اليوم",
+  "learnMore": "اعرف المزيد . . .",
+  "certificates": "الشهادات",
+  "Learn": "تعلم",
+  "Resources": "الموارد",
+  "Pricing": "التسعير",
+  "taxingLaughter": "الضريبة على النكات: سجلات الضريبة على النكات",
+  "findTheBestCareer": "اعثر على أفضل مسار وظيفي لك",
+  "startCareer": "ابدأ حياتك المهنية",
+  "whyStudentsLove": "لماذا يحب الطلاب",
+  "medica": "MEDICA",
+  "longEstablishedFact": "إنها حقيقة معروفة منذ فترة طويلة أن القارئ سيتشتت انتباهه بسبب المحتوى المقروء لصفحة عند النظر إلى تخطيطها. توزيع النقاط على الحروف،",
+  "joinUsNow": "انضم إلينا الآن!",
+  "signIn": "تسجيل دخول",
+  "signUp": "أشتراك",
+  "footer": {
+    "about": "حول",
+    "aboutUs": "معلومات عنا",
+    "instructors": "المدربون",
+    "contactUs": "اتصل بنا",
+    "pricing": "التسعير",
+    "learn": "تعلم",
+    "courses": "الدورات",
+    "careerTracks": "مسارات مهنية",
+    "careerCertificate": "شهادة مهنية",
+    "courseCertificate": "شهادة دورة",
+    "resources": "الموارد",
+    "courseNotes": "ملاحظات الدورة",
+    "templates": "قوالب",
+    "careerGuides": "أدلة مهنية",
+    "practiceExams": "امتحانات تجريبية",
+    "platform": "المنصة",
+    "successStories": "قصص النجاح",
+    "qnaHub": "مركز الأسئلة والأجوبة",
+    "helpCenter": "مركز المساعدة",
+    "verifyCertificate": "تحقق من الشهادة",
+    "company": "الشركة",
+    "termsOfService": "شروط الخدمة",
+    "privacyPolicy": "سياسة الخصوصية",
+    "companyDescription": "نحن شركة تنظيف محترفة منذ عام 1997 ونقدم حلول تنظيف تجارية وسكنية رائدة في الولايات المتحدة.",
+    "followUs": "تابعنا",
+    "medica": "ميديكا",
+    "copyrightsReserved": "جميع الحقوق محفوظة",
+    "termsAndConditions": "الشروط والأحكام",
+    "cookiesPolicy": "سياسة الكوكيز",
+    "copyrightNotification": "إشعار حقوق النشر"
+  },
+  "courseHead": {
+    "foundational": "أساسي",
+    "with": "مع",
+    "coFounder": "المؤسس المشارك والرئيس التنفيذي للتكنولوجيا",
+    "courseDescription": "يوفر هذا الدورة نظرة عامة على الترميز الطبي، مع التركيز على أنظمة الترميز HCPCS و CPT و ICD. سيتعلم الطلاب أساسيات الترميز ويفهمون الرموز المختلفة.",
+    "weeks": "7 أسابيع",
+    "lessons": "81 درس",
+    "startCourse": "ابدأ الدورة",
+    "freeDays": "احصل على 7 أيام مجانية لأول تسجيل"
+  },
+  "courseOverview": {
+    "title": "نظرة عامة على الدورة",
+    "description": "يوفر هذا الدورة نظرة عامة على الترميز الطبي، مع التركيز على أنظمة الترميز HCPCS و CPT و ICD. سيتعلم الطلاب أساسيات الترميز ويفهمون مجموعات الرموز المختلفة وكيفية استخدامها في الفوترة الطبية والتعويض. ستغطي الدورة إرشادات الترميز، والاتفاقيات، والمعدلات، وكذلك السيناريوهات والتحديات الشائعة في الترميز."
+  },
+  "courseLearn": {
+    "title": "ماذا ستتعلم؟",
+    "section": "القسم",
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل"
+  },
+  "courseVideos": {
+    "title": "منهج الترميز الطبي والنسخ",
+    "lectures": "المحاضرات",
+    "numberOfLectures": "6",
+    "totalDuration": "01:08:52",
+    "lockedLecturesNotice": "ستظل بعض المحاضرات مغلقة حتى تشاهد المحاضرات السابقة.",
+    "videoTitle1": "الفرق بين الترميز والنسخ",
+    "videoTitle2": "مقدمة في الترميز الطبي",
+    "videoTitle3": "تقنيات النسخ المتقدمة",
+    "videoTitle4": "فهم المصطلحات الطبية",
+    "videoTitle5": "أفضل الممارسات في الترميز",
+    "videoTitle6": "المراجعة النهائية والامتحان",
+    "watchFree": "مشاهدة مجانية",
+    "showMore": "عرض المزيد",
+    "showLess": "عرض أقل"
+  },
+  "courseMayLike": {
+    "title": "الدورات التي",
+    "subtitle": "قد تعجبك",
+    "doctors": [
+      {
+        "name": "اسم الطبيب",
+        "title": "دكتور محمود علي صابر",
+        "rate": 4.5,
+        "docTitle": "عنوان الطبيب"
+      },
+      {
+        "name": "اسم الطبيب",
+        "title": "دكتور ياسر أحمد",
+        "rate": 4.0,
+        "docTitle": "عنوان الطبيب"
+      },
+      {
+        "name": "اسم الطبيب",
+        "title": "دكتور محمد عبد الله",
+        "rate": 4.7,
+        "docTitle": "عنوان الطبيب"
+      },
+      {
+        "name": "اسم الطبيب",
+        "title": "دكتور علي حسن",
+        "rate": 4.2,
+        "docTitle": "عنوان الطبيب"
+      },
+      {
+        "name": "اسم الطبيب",
+        "title": "دكتور أحمد يوسف",
+        "rate": 4.3,
+        "docTitle": "عنوان الطبيب"
+      }
+    ]
+  },
+  "coursesPage": {
+    "MedicalSpecialties": "التخصصات الطبية",
+    "Filter": "فلتر"
+  },
+  "labels": {
+    "searchKey": "كلمة البحث",
+    "duration": "المدة",
+    "courseType": "نوع الدورة",
+    "averagePrice": "متوسط السعر",
+    "ratings": "التقييمات"
+  },
+  "placeholders": {
+    "search": "بحث",
+    "duration": "اختر المدة",
+    "courseType": "اختر نوع الدورة",
+    "averagePrice": "اختر نطاق متوسط السعر"
+  },
+  "buttons": {
+    "submit": "إرسال"
+  },
+  "validation": {
+    "usernameMinLength": "يجب أن يكون اسم المستخدم على الأقل 2 أحرف.",
+    "EmailMinLength": "يجب أن يتكون البريد الإلكتروني من حرفين على الأقل",
+    "PasswordMinLength" : "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+    "EmailInvalid": "البريد الإلكتروني غير صالح"
+  },
+  "durationOptions": [
+    {"label": "0 - 2 ساعات", "value": "0-2"},
+    {"label": "2 - 4 ساعات", "value": "2-4"},
+    {"label": "4 - 6 ساعات", "value": "4-6"},
+    {"label": "6 - 8 ساعات", "value": "6-8"}
+  ],
+  "courseTypeOptions": [
+    {"label": "تطوير الويب", "value": "web-development"},
+    {"label": "علوم البيانات", "value": "data-science"},
+    {"label": "التصميم", "value": "design"},
+    {"label": "الأعمال", "value": "business"}
+  ],
+  "averagePriceOptions": [
+    {"label": "أقل من $50", "value": "0-50"},
+    {"label": "$50 - $100", "value": "50-100"},
+    {"label": "$100 - $200", "value": "100-200"},
+    {"label": "أكثر من $200", "value": "200-"}
+  ],
+  "CourseVideo": {
+    "Curriculum": "المقرر"
+  },
+  "comments": "التعليقات",
+  "commentsContent": "نعم. إنه يتماشى مع نمط التصميم WAI-ARIA.",
+  "attachments": "المرفقات",
+  "attachmentsContent": "نعم. إنه يتماشى مع نمط التصميم WAI-ARIA.",
+  "direction": "rtl",
+  "studentFeedback": "ملاحظات الطلاب",
+  "ratings": "1996 تقييمات",
+  "signInImageAlt": "تسجيل الدخول",
+  "loginToYourProfile": "تسجيل الدخول إلى حسابك",
+  "logInWith": "يمكنك تسجيل الدخول باستخدام:",
+  "googleAccount": "حساب جوجل",
+  "twitterAccount": "حساب تويتر",
+  "facebookAccount": "حساب فيسبوك",
+  "loginWithEmail": "أو يمكنك تسجيل الدخول باستخدام بريدك الإلكتروني",
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "rememberMe": "تذكرني",
+  "forgotPassword": "نسيت كلمة المرور",
+  "enter": "دخول",
+  "dashboardHomeHeader": {
+    "welcomeBack": "مرحبًا بعودتك",
+    "userName": "علي حسني",
+    "subtitle": "نص وهمي قياسي منذ القرن الخامس عشر.",
+    "overview": "نظرة عامة",
+    "timeAlt": "الوقت",
+    "hoursSpent": "الساعات المستغرقة"
+  },
+  "dashboardHomePopularCourses": {
+    "title": "الدورات الشعبية",
+    "showMore": "عرض المزيد",
+    "courseTitle1": "عنوان الدورة 1",
+    "courseDescription1": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت.",
+    "docTitle1": "أستاذ الطب",
+    "courseTitle2": "عنوان الدورة 2",
+    "courseDescription2": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت.",
+    "docTitle2": "أستاذ الهندسة"
+  },
+  "dashboardHomeLatestStudy": {
+    "title": "أحدث الدراسات",
+    "videoTitle": "لوريم إيبسوم دولور سيت أميت"
+  },
+  "dashboardCurrentStudy": {
+    "title": "الدراسة الحالية",
+    "programTitle": "برنامج التدريب المتقدم على تطهير المعدات الطبية",
+    "programDescription": "تقديمك إلى مجال علم البيانات وبناء فهمك للمصطلحات والعمليات الأساسية لعلم البيانات."
+  },
+  "lang": "ar",
+  "dashboardCourses": {
+    "title": "الدورات",
+    "subtitle": "نص وهمي قياسي منذ القرن الخامس عشر."
+  },
+  "dashboardCoursesMyCourses": {
+    "title": "الدورات المفضلة",
+    "courseTitle1": "عنوان الدورة 1",
+    "courseDescription1": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إيليت.",
+    "docTitle1": "أستاذ الطب",
+    "exploreAllCourses": "استكشاف جميع الدورات"
+  },
+  "dashboardCoursesFavorite": {
+    "title": "الدورات المفضلة",
+    "exploreAllCourses": "استكشاف جميع الدورات"
+  },
+  "dashboardCoursesRecommended": {
+    "title": "الدورات الموصى بها",
+    "exploreAllCourses": "استكشاف جميع الدورات"
+  },
+  "VerifyYourEmail": "قم بتأكيد بريدك الإلكتروني لإكمال تسجيلك."
+}

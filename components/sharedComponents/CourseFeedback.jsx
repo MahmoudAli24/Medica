@@ -6,11 +6,11 @@ import {ScrollArea, ScrollBar} from "@/components/ui/scroll-area"
 import FeedbackReviewItem from "@/modules/course/components/FeedbackReviewItem";
 
 
-const CourseFeedback =({feedbackData ,feedbackDataR})=>{
+const CourseFeedback =({feedbackData ,feedbackDataR ,dict})=>{
 
     return(
-        <section className={"container py-6"}>
-            <HeadingSection>Student Feedback</HeadingSection>
+        <section className={"container py-6"} dir={"ltr"}>
+            <HeadingSection>{dict.studentFeedback}</HeadingSection>
             <Card className={"mx-auto pt-6 lg:w-3/5"}>
                 <CardContent className={"p-3"}>
                     <div>

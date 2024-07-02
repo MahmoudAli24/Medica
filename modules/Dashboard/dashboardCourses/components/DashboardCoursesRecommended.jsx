@@ -8,7 +8,7 @@ import doctorImage from "@/public/cropped-portrait-senior-man-glasses-teacher-pr
 import Link from "next/link";
 import {MdOutlineKeyboardDoubleArrowRight} from "react-icons/md";
 
-const DashboardCoursesRecommended = () => {
+const DashboardCoursesRecommended = ({dict}) => {
     const breakpoints = {
         640: {
             slidesPerView: 2,
@@ -20,8 +20,8 @@ const DashboardCoursesRecommended = () => {
     }
     return (<section>
         <div className={"flex items-center justify-between my-3"}>
-            <TypographyH3 className={"capitalize font-normal"}>Recommended courses</TypographyH3>
-            <Link href={"/courses"} className={"text-[--main-color] flex items-center gap-2"}><span>Explore all courses</span><span><MdOutlineKeyboardDoubleArrowRight
+            <TypographyH3 className={"capitalize font-normal"}>{dict.dashboardCoursesRecommended.title}</TypographyH3>
+            <Link href={"/courses"} className={"text-[--main-color] flex items-center gap-2"}><span>{dict.dashboardCoursesRecommended.exploreAllCourses}</span><span><MdOutlineKeyboardDoubleArrowRight
                 size={20}/></span></Link>
         </div>
         <div>
@@ -40,4 +40,4 @@ const DashboardCoursesRecommended = () => {
     </section>)
 }
 
-export default DashboardCoursesRecommended
+export default DashboardCoursesRecommended;

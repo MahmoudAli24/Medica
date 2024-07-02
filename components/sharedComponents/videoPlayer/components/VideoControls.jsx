@@ -1,7 +1,9 @@
-import { FaPlay, FaPause } from "react-icons/fa6";
+"use client";
+import { FaPlay, FaPause, FaCompress } from "react-icons/fa6";
 import { Slider } from "@nextui-org/slider";
+import { FaExpand } from "react-icons/fa";
 
-const VideoControls = ({ isPlaying, onPlayPauseClick, onTimeChange, currentTime, duration }) => {
+const VideoControls = ({ isPlaying, onPlayPauseClick, onTimeChange, currentTime, duration, handleFullscreenClick, isFullscreen }) => {
     const formatTime = (time) => {
         const minutes = Math.floor(time / 60);
         const seconds = Math.floor(time % 60);
@@ -9,7 +11,7 @@ const VideoControls = ({ isPlaying, onPlayPauseClick, onTimeChange, currentTime,
     };
 
     return (
-        <div className="absolute bottom-0 left-0 w-full px-6 flex items-center justify-center my-6 z-10">
+        <div className="absolute bottom-0 left-0 w-full px-6 flex items-center justify-center gap-3 my-6 z-10">
             <button
                 className="bg-blue-500 p-2 rounded-full"
                 onClick={onPlayPauseClick}
@@ -17,16 +19,28 @@ const VideoControls = ({ isPlaying, onPlayPauseClick, onTimeChange, currentTime,
                 {isPlaying ? <FaPause /> : <FaPlay />}
             </button>
             <Slider
+                size="sm"
+                step={0.01}
+                maxValue={duration}
+                minValue={0}
                 value={currentTime}
-                max={duration}
-                step={1}
-                onValueChange={onTimeChange}
-                aria-label="Time Slider"
-                size="lg"
-                color="success"
-                className="mx-4 flex-grow"
+                onChange={onTimeChange}
+                aria-label="Video Progress"
+                defaultValue={0.2}
+                className="mx-2"
+                classNames={{
+                    filler: "bg-[#31C7FE] rounded-full",
+                    track: "bg-[#D7DCEA] !border-l-0",
+                    thumb: "bg-transparent after:w-[13px] after:h-[13px]"
+                }}
             />
             <span className="text-sm">{formatTime(currentTime)}</span>
+            <button
+                className="bg-blue-500 p-2 rounded-full"
+                onClick={handleFullscreenClick}
+            >
+                {isFullscreen ? <FaCompress /> : <FaExpand />}
+            </button>
         </div>
     );
 };

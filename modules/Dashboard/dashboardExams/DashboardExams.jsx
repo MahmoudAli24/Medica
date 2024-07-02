@@ -4,7 +4,7 @@ import NavbarDashboard from "@/components/navbarDashboard/NavbarDashboard";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import ExamSection from "@/modules/Dashboard/dashboardExams/components/ExamSection";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {fetchCoursesExams} from "@/app/actions/coursesExamsAction";
+import {fetchCoursesExams} from "@/app/[lang]/actions/coursesExamsAction";
 
 const tabClasses = "border-transparent data-[state=active]:font-bold data-[state=active]:text-[--secondary-color] data-[state=active]:border-b-2 data-[state=active]:border-[--secondary-color]";
 

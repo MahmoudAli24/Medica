@@ -1,10 +1,10 @@
 import CoursesHead from "@/modules/courses/CoursesHead";
 import CoursesData from "@/modules/courses/CoursesData";
 
-const Courses = ({searchParams}) => {
+const Courses = ({searchParams , dict}) => {
     return (<main>
-        <CoursesHead/>
-        <CoursesData searchParams={searchParams}/>
+        <CoursesHead dict={dict}/>
+        <CoursesData dict={dict} searchParams={searchParams}/>
     </main>)
 }
 
